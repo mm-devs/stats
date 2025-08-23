@@ -14,7 +14,7 @@ button {
 body {
   font-family: "Segoe UI", Roboto, Arial, sans-serif;
   margin: 0;
-  background: #DFF2FF;
+  background: #FEFEFE;
   color: #333;
   display: flex;
   flex-direction: column;
@@ -23,7 +23,7 @@ body {
 
 /* --- Bannière --- */
 header {
-  background: #EDEDED;
+  background: #CECECE;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,7 +31,7 @@ header {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 header img {
-  max-width: 400px;
+  max-width: 300px;
   width: 100%;
   height: auto;
 }
@@ -151,6 +151,20 @@ header img {
 }
 .probability-text.visible {
   opacity: 1;
+}
+
+/* --- Uniformisation de la largeur des 3 boutons --- */
+#controls, .probability-btn {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.control-btn, .probability-btn {
+  flex: 1;
+  max-width: 250px;
+  min-width: 220px;
+  text-align: center;
 }
 
 /* --- Responsive Mobile --- */

@@ -188,7 +188,7 @@ showProbabilityBtn.addEventListener("click", () => {
   const stat = calculateProbability();
   if (stat !== null) {
     probabilityDisplay.textContent =
-      "Toutes les combinaisons ont la même probabilité de sortir lors d'un tirage à l'aveugle, pourtant " +
+      "Bien que toutes les combinaisons ont la même probabilité de sortir lors d'un tirage à l'aveugle, " +
       stat +
       "% des sondés ont nommé cette combinaison.";
     probabilityDisplay.classList.add("visible");
