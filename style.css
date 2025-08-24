@@ -169,7 +169,7 @@ header img {
 /* --- Responsive Mobile --- */
 @media (max-width: 600px) {
   header img {
-    max-width: 90%; /* limite à 90% de la largeur de l'écran */
+    max-width: 90%;
   }
   .container h1 {
     font-size: 18px;
@@ -182,8 +182,17 @@ header img {
     font-size: 22px;
     padding: 15px;
   }
-  .control-btn {
+
+  /* Uniformiser les boutons */
+  #controls, .probability-btn {
+    flex-direction: column; /* superpose les boutons verticalement */
+    align-items: center;
+    gap: 10px;
+  }
+  .control-btn, .probability-btn {
+    width: 90%;      /* tous les boutons font 90% de la largeur du conteneur */
+    max-width: 250px; /* limite sur grands écrans */
+    min-width: auto;  /* supprime le min-width fixe pour mobile */
     font-size: 13px;
-    min-width: 120px;
   }
 }
