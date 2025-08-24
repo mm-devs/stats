@@ -160,7 +160,7 @@ header img {
   gap: 10px;
 }
 .control-btn, .probability-btn {
-  flex: 1;
+  flex: 0 0 auto;
   max-width: 250px;
   min-width: 220px;
   text-align: center;
