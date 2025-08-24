@@ -96,7 +96,6 @@ header img {
 
 /* --- Boutons --- */
 #controls {
-  margin-top: 15px;
   display: flex;
   justify-content: center;
   gap: 10px;
